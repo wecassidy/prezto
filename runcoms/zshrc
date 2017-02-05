@@ -10,4 +10,14 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# dircolors
+eval `dircolors ~/.dir_colors`
+
+# Start TMUX
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
+
 # Customize to your needs...
+alias l='ls -la'
+alias 'backup-mount'='sudo mount -U 9E17-48E7 /media/WEC-BACKUP'
