@@ -13,11 +13,22 @@ fi
 # dircolors
 eval `dircolors ~/.dir_colors`
 
-# Start TMUX
-if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-fi
-
 # Customize to your needs...
 alias l='ls -la'
-alias 'backup-mount'='sudo mount -U 9E17-48E7 /media/WEC-BACKUP'
+excel2latex () {
+  sed -e 's/\t/ \& /g' -e 's/$/ \\\\ \\hline/g'
+}
+alias todo='todo-txt'
+
+# ANSI colours
+export RED='\033[31m'
+export ORANGE='\033[31;1m'
+export GREEN='\033[32m'
+export YELLOW='\033[33m'
+export BLUE='\033[34m'
+export MAGENTA='\033[35m'
+export VIOLET='\033[35;1m'
+export CYAN='\033[36m'
+export DEFAULT='\033[37m'
+export WHITE='\033[37;1m'
+export RESET='\033[0m'
