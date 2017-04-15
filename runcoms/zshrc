@@ -18,7 +18,7 @@ alias l='ls -la'
 excel2latex () {
   sed -e 's/\t/ \& /g' -e 's/$/ \\\\ \\hline/g'
 }
-alias todo='todo-txt -d ~/.todo-txt/config'
+alias todo='todo-txt -d ~/.todo/config'
 
 # ANSI colours
 export RED='\033[31m'
