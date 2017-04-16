@@ -14,7 +14,7 @@ fi
 eval `dircolors ~/.dir_colors`
 
 # Customize to your needs...
-alias l='ls -la'
+alias l='ls -lA'
 excel2latex () {
   sed -e 's/\t/ \& /g' -e 's/$/ \\\\ \\hline/g'
 }
