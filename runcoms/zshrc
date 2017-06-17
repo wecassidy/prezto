@@ -13,8 +13,11 @@ fi
 # dircolors
 eval `dircolors ~/.dir_colors`
 
+# Path
+export PATH=$PATH:/sbin:/usr/sbin
+
 # Customize to your needs...
-alias l='ls -lA'
+alias l='ls -lAh'
 excel2latex () {
   sed -e 's/\t/ \& /g' -e 's/$/ \\\\ \\hline/g'
 }
