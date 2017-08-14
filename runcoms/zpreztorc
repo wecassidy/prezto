@@ -139,9 +139,11 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 
 # Set syntax highlighting styles.
 zstyle ':prezto:module:syntax-highlighting' styles \
-  'builtin' 'bg=blue' \
+  'builtin' 'fg=magenta,bold' \
   'command' 'fg=blue' \
-  'function' 'bg=blue,fg=black'
+  'function' 'fg=magenta' \
+  'single-quoted-argument' 'fg=cyan' \
+  'double-quoted-argument' 'fg=cyan'
 
 #
 # Terminal
