@@ -23,6 +23,8 @@ excel2latex () {
 }
 alias todo='todo-txt -d ~/.todo/config'
 
+alias venv='source bin/activate'
+
 # ANSI colours
 export RED='\033[31m'
 export ORANGE='\033[31;1m'
