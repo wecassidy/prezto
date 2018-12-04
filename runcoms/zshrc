@@ -25,6 +25,12 @@ alias todo='todo-txt -d ~/.todo/config'
 
 alias venv='source bin/activate'
 
+# pacman aliases
+alias pacsearch='pacman -Ss'
+alias pacinstall='sudo pacman -S'
+alias pacremove='sudo pacman -Rs'
+alias pacupgrade='sudo pacman -Syu'
+
 # ANSI colours
 export RED='\033[31m'
 export ORANGE='\033[31;1m'
