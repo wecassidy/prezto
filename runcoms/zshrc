@@ -29,7 +29,9 @@ alias venv='source bin/activate'
 alias pacsearch='pacman -Ss'
 alias pacinstall='sudo pacman -S'
 alias pacremove='sudo pacman -Rs'
+alias pacdelete=pacremove
 alias pacupgrade='sudo pacman -Syu'
+alias pacupdate=pacupgrade
 
 # ANSI colours
 export RED='\033[31m'
